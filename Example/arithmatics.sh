@@ -20,3 +20,11 @@ echo "Division of $num1 & $num2 is $div"
 # Average
 avg=$((sum / 2))
 echo "Average of $num1 & $num2 is $avg"
+
+echo "Please enter thew first  number"
+read A
+echo "Please enter thew second number"
+read B
+
+subtraction=$((A - B))
+echo "SUBTRACTION is $subtraction"
