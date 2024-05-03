@@ -2,10 +2,10 @@
 
 file=names.txt
 
-if [read -e $file]; then
+if [ -e $file]; then
     echo "The file is empty"
 else 
-    echo "Non-Empty"
+    echo "File is non-empty"
 fi
 
 
