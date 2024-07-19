@@ -6,7 +6,6 @@ function first_function ()
 }
 
 # Quit Function
-
 function quit () {
   exit
 }
@@ -15,13 +14,13 @@ function print ()
 {
   echo $1
 }
-# Calling the function
 
+# Calling the function
 first_function
 echo "Take the arguments below"
 
-print hello 
-print world 
+print hello
+print world
 
 
 function usage()
@@ -36,20 +35,15 @@ function is_fie_exist()
     [[-f $file ]] && return 0 || return 1
 }
 
-[[ $# -eq 0 ]] && usage 
+[[ $# -eq 0 ]] && usage
 
 
 if (is_fie_exist "$1")
-then 
+then
     echo "file found"
-else 
+else
     echo "file not found"
 
-fi 
-
-
-
-
-
+fi
 
 quit
